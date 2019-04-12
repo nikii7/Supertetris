@@ -8,5 +8,6 @@ namespace Supertetris
 {
     class Schwierigkeitsgrad
     {
+        //Hier werden die verschiedenen Schwierigkeiten programmiert
     }
 }
