@@ -6,5 +6,7 @@
         xmlns:local="clr-namespace:Supertetris"
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="450">
-    <Grid/>
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="522" Stroke="Black" VerticalAlignment="Top" Width="287"/>
+    </Grid>
 </Window>
