@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Supertetris
 {
-    class Figuren
+    class gefalleneFormen
     {
-        //hier werden die verschiedenen Farben und Formen der Figuren erstellt
+        //hier werden die Formen gespeichert, die schon auf den Boden gefallen sind
     }
 }
