@@ -56,6 +56,7 @@
     </ApplicationDefinition>
     <Compile Include="Schwierigkeitsgrad.cs" />
     <Compile Include="Spielfeld.cs" />
+    <Compile Include="Timer.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
