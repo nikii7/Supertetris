@@ -8,5 +8,8 @@ namespace Supertetris
 {
     class Timer
     {
+        public class DispatcherTimer
+        {
+        }
     }
 }

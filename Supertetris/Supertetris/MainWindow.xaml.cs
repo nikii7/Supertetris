@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Supertetris
 {
     /// <summary>
@@ -24,5 +25,15 @@ namespace Supertetris
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }
