@@ -19,10 +19,10 @@ namespace Supertetris
     {
         DispatcherTimer dp;
 
-        dp = new DispatcherTimer(); //ein Dispatcher wird hier initialisiert
+        /*dp = new DispatcherTimer(); //ein Dispatcher wird hier initialisiert
 
         dp.Interval = new TimeSpan(800000); //Ticks?
         dp.Tick += Dp_Tick; //Verweis, was er wiederholt ausführen soll
-            dp.Start(); //Dispachter wird gestartet
+            dp.Start(); //Dispachter wird gestartet*/
     }
 }

@@ -54,6 +54,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="gefalleneFormen.cs" />
+    <Compile Include="Highscore.cs" />
     <Compile Include="Schwierigkeitsgrad.cs" />
     <Compile Include="Spielfeld.cs" />
     <Compile Include="Timer.cs" />

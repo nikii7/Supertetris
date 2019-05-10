@@ -25,16 +25,12 @@ namespace Supertetris
         {
             InitializeComponent();
 
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
+            //Test
+            Highscore.Speichern("123");
+            foreach (var i in Highscore.Lesen())
+            {
+                MessageBox.Show(i);
+            }
         }
     }
 }
