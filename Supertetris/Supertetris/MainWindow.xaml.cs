@@ -24,6 +24,12 @@ namespace Supertetris
         {
             InitializeComponent();
 
+            //Test
+            Highscore.Speichern("123");
+            foreach (var i in Highscore.Lesen())
+            {
+                MessageBox.Show(i);
+            }
         }
     }
 }
