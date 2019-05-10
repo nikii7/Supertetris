@@ -15,7 +15,7 @@ namespace Supertetris
 
         public void ZeilenEntfernen()
         {
-            -
+            
         }
     }
 }
