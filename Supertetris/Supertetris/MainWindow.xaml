@@ -9,7 +9,7 @@
     <Grid>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="522" Stroke="#FF404040" VerticalAlignment="Top" Width="300
                    "/>
-        <Button x:Name="btn_Pause" Content="Pause" HorizontalAlignment="Left" Margin="300,370,0,0" VerticalAlignment="Top" Width="172" Height="50" Click="Button_Click_1" FontFamily="Impact" FontSize="20" Background="White" BorderBrush="White"/>
+        <Button x:Name="btn_Pause" Content="Pause" HorizontalAlignment="Left" Margin="300,370,0,0" VerticalAlignment="Top" Width="172" Height="50" FontFamily="Impact" FontSize="20" Background="White" BorderBrush="White"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="80" Margin="315,10,0,0" VerticalAlignment="Top" Width="157"/>
         <Image Margin="324,420,35,0.5" Source="Image1.png" Stretch="Fill"/>
     </Grid>

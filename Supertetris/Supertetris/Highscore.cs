@@ -26,7 +26,6 @@ namespace Supertetris
 
         public static List<string> Lesen()
         {
-            string path = @"../../src/Highscore.txt";
             // Open the file to read from.
             
             int counter = 0;
@@ -34,8 +33,7 @@ namespace Supertetris
             List<string> Highscores = new List<string>();
 
             // Read the file and display it line by line.  
-            StreamReader file =
-                new StreamReader(@"../../src/Highscore.txt");
+            StreamReader file = new StreamReader(@"../../src/Highscore.txt");
             while ((line = file.ReadLine()) != null)
             {
                 Highscores.Add(line);
