@@ -8,22 +8,22 @@ namespace Supertetris
 {
     class Schwierigkeitsgrad
     {
-        public int schnelligkeit { get; set; }
+        public int Schnelligkeit { get; set; }
 
 
-        public void leicht() {
+        public void Leicht() {
 
-            schnelligkeit += 1;
+            Schnelligkeit += 1;
         }
 
-        public void mittel()
+        public void Mittel()
         {
-            schnelligkeit += 2;
+            Schnelligkeit += 2;
         }
 
-        public void schwierig()
+        public void Schwierig()
         {
-            schnelligkeit += 3;
+            Schnelligkeit += 3;
         }
     }
 }
