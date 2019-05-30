@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="MainWindow" Height="570" Width="525"
     KeyDown = "HandleKeyDown" 
-    Initialized = "MainWindow_Initilized" Background ="LawnGreen">
+    Initialized = "MainWindow_Initilized" Background ="LightBlue">
 
     <DockPanel LastChildFill="False">
         <StackPanel DockPanel.Dock="Right" Width="127">

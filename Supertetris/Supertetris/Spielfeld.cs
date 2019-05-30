@@ -42,7 +42,7 @@ namespace Supertetris
                     Blockcontrols[i, j].Background = NoBrush;
                     Blockcontrols[i, j].BorderBrush = SilverBrush;
                     Blockcontrols[i, j].BorderThickness = new Thickness(1, 1, 1, 1);
-                    Grid.SetRow(Blockcontrols[i, j], i);//Hier setzen wir Referenzen von Labels in Zellen von Grid
+                    Grid.SetRow(Blockcontrols[i, j], i);//Hier setzt man Referenzen von Labels in Zellen von Grid
                     Grid.SetColumn(Blockcontrols[i, j], j);//Hier setzen wir Referenzen von Labels in Zellen von Grid
                     TetrisGrid.Children.Add(Blockcontrols[i, j]);
                 }
