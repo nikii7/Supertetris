@@ -10,16 +10,13 @@ namespace Supertetris
 {
     class Highscore
     {
-        public static void Speichern(string Wert)
+        public static void Speichern(string Wert, string Name)
         {
-            string path = @"../../src/Highscore.txt";
-            if (!File.Exists(path))
+            StreamReader stream = new StreamReader(@"../../src/Highscore.txt");
+            // Create a file to write to.
+            while (stream.EndOfStream == false)
             {
-                // Create a file to write to.
-                using (StreamWriter sw = File.CreateText(path))
-                {
-                    sw.WriteLine(Wert);
-                }
+                string line = stream.ReadLine();
             }
         }
 

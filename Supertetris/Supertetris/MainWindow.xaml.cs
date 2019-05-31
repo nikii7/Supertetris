@@ -29,7 +29,8 @@ namespace Supertetris
             
 
             //Test
-            Highscore.Speichern("123");
+            Highscore.Speichern("123", "Thomas");
+            Highscore.Speichern("100", "Niki");
             foreach (var i in Highscore.Lesen())
             {
                 MessageBox.Show(i);
