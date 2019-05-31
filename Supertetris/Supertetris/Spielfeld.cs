@@ -69,7 +69,7 @@ namespace Supertetris
 
             foreach (Point S in Shape)
             {
-                //Labels inerhalb Blockcontrol manipulirern. (int) macht doubble werte in int.
+                //Labels inerhalb Blockcontrol manipulirern. (int) macht double werte in int.
                 //(Cols / 2) -1: damit neue steine in mitte sind.  + 2 Da 22 zeilen in die Höhe geht
                 Blockcontrols[(int)(S.X + Position.X) + ((Cols / 2) - 1), (int)(S.Y + Position.Y) + 2].Background = Color;
             }
@@ -134,7 +134,7 @@ namespace Supertetris
                 {
                     move = false;
                 }
-                //Checkt ob was Farbiges im wg ist(Block)
+                //Checkt ob was Farbiges im weg ist(Block)
                 else if (Blockcontrols[((int)(S.X + position.X) + ((Cols / 2) - 1) - 1), (int)(S.Y + position.Y) + 2].Background != NoBrush)
                 {
                     move = false;
@@ -156,6 +156,7 @@ namespace Supertetris
             Point position = currTetramino.getCurrPosition();
             Point[] Shape = currTetramino.getCurrShape();
             bool move = true;
+            
             foreach (Point S in Shape)
             {   //Schritt den wir machen ((int)(S.X + position.X) + ((Cols/2)-1)-1)
                 if (((int)(S.X + position.X) + ((Cols / 2) - 1) + 1) >= Cols)//Checkt ob es OutOfRange ist
@@ -168,6 +169,7 @@ namespace Supertetris
                     move = false;
                 }
             }
+            
             if (move)
             {
                 currTetramino.movRight();
