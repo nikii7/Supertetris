@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Supertetris"
         mc:Ignorable="d"
-        Title="Benutzereingabe" Height="300" Width="300" Background="LightBlue">
+        Title="Benutzereingabe" Height="300" Width="300" Background="#FFFF6255">
     <Grid>
         <TextBox Name="Benutzername" HorizontalAlignment="Left" Height="23" Margin="132,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White"/>
         <Label Content="Benutzername:" HorizontalAlignment="Left" Height="23" Margin="21,102,0,0" VerticalAlignment="Top" Width="106"/>
-        <Button Content="Bestätigen" HorizontalAlignment="Left" Height="27" Margin="101,195,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
+        <Button Content="Bestätigen" HorizontalAlignment="Left" Height="27" Margin="101,195,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click" Background="#FF2C2C2C" BorderBrush="#FF2C2C2C" Foreground="White"/>
         <Label Content="Der Benutzername muss mit &#xD;&#xA;einem Buchstaben beginnen!" HorizontalAlignment="Left" Height="48" Margin="42,130,0,0" VerticalAlignment="Top" Width="210" FontSize="10"/>
 
     </Grid>
