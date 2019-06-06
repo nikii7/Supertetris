@@ -121,6 +121,7 @@ namespace Supertetris
                 }
             }
         }
+
         //Spiellogik:
         public void CurrFigurMovLeft()
         {
@@ -217,7 +218,7 @@ namespace Supertetris
         {
             Point position = currTetramino.getCurrPosition();
             Point[] Shape = currTetramino.getCurrShape();
-            Point[] S = new Point[4];
+            Point[] S = new Point[4];//Da nur 4 blöcke
             bool move = true;
             Shape.CopyTo(S, 0);// ab index 0 copy machen
             currFigurErase();
@@ -226,7 +227,7 @@ namespace Supertetris
                 double x = S[i].X;//Rotation
                 S[i].X = S[i].Y + -1;// aktuelle x coordinate überschreiben //Rotation
                 S[i].Y = x;//Rotation
-                if (((int)(S[i].Y + position.Y) + 2) >= Rows)
+                if (((int)(S[i].Y + position.Y) + 2) >= Rows)//Checken x coordinaten
                 {
                     move = false;
                 }

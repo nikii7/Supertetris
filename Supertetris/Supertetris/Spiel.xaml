@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Spiel" Height="570" Width="525"
     KeyDown="HandleKeyDown"
-        Initialized="MainWindow_Initilized" Background="LightBlue">
+        Initialized="MainWindow_Initilized" Background="Black">
     <DockPanel LastChildFill="True">
-        <StackPanel DockPanel.Dock="Right" Width="172">
-            <Label Content="Punkte" Height="56" x:Name="Scores" FontSize="28" FontWeight="Bold"/>
-            <Label Content="Linien" Height="56" Name="Lines" FontSize="28" FontWeight="Bold"/>
+        <StackPanel DockPanel.Dock="Right" Width="172" Background="#FFFF6255">
+            <Label Content="Punkte" Height="56" x:Name="Scores" FontSize="28" FontWeight="Bold" HorizontalAlignment="Right" Width="172"/>
+            <Label Content="Linien" Height="56" x:Name="Lines" FontSize="28" FontWeight="Bold" HorizontalAlignment="Right" Width="172"/>
         </StackPanel>
         <Grid Name="MG" Height="500" Width="250">
             <Grid.RowDefinitions>

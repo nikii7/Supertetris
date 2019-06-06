@@ -62,9 +62,16 @@ namespace Supertetris
         private void timer(object sender, EventArgs e)
         {
             Scores.Content = SF.getScore().ToString("00000");
-            Lines.Content = SF.getScore().ToString("00000");
+            Lines.Content = SF.getLines().ToString("00000");
             SF.CurrFigurMovDown();
 
+        }
+        private void Gameend()
+        {
+            if (true)
+            {
+
+            }
         }
         private void HandleKeyDown(object sender, KeyEventArgs e)
         {
