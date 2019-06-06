@@ -157,7 +157,7 @@ namespace Supertetris
             Point[] Shape = currTetramino.getCurrShape();
             bool move = true;
             currFigurErase();
-            /*foreach (Point S in Shape)
+            foreach (Point S in Shape)
             {   //Schritt den wir machen ((int)(S.X + position.X) + ((Cols/2)-1)-1)
                 if (((int)(S.X + position.X) + ((Cols / 2) - 1) + 1) >= Cols)//Checkt ob es OutOfRange ist
                 {
@@ -168,7 +168,7 @@ namespace Supertetris
                 {
                     move = false;
                 }
-            }*/
+            }
 
             if (move)
             {
