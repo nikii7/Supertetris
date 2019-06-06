@@ -26,11 +26,11 @@ namespace Supertetris
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(Benutzername.Text);
+            //MessageBox.Show(Benutzername.Text);
             Spieler.Username = Benutzername.Text;
-            MessageBox.Show(Benutzername.Text);
-            MainWindow mw = new MainWindow();
-            mw.Oeffnen();
+            //MessageBox.Show(Benutzername.Text);
+            Spiel sp = new Spiel();
+            sp.Oeffnen();
             Close();
         }
     }
