@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 
 namespace Supertetris
 {
@@ -27,7 +28,13 @@ namespace Supertetris
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            bool b = Regex.IsMatch(Benutzername.Text, "[A-Za-z]");
+            if (!b)
+            {
+                MessageBox.Show("Ungültige Eingabe!");
+                return ;
 
+            }
             //MessageBox.Show(Benutzername.Text);
             Spieler.Username = Benutzername.Text;
             DirectoryInfo[] Dir = new DirectoryInfo(@"../../src/").GetDirectories();
