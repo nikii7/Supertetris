@@ -24,6 +24,7 @@ namespace Supertetris
     {
         DispatcherTimer Timer;
         Spielfeld SF;
+        static public Label Username1 { get; set; }
         public MainWindow()
         {
             
@@ -35,6 +36,23 @@ namespace Supertetris
             {
                 MessageBox.Show(i);
             }
+
+            Benutzereingabe bng = new Benutzereingabe();
+            bng.Show();
+            GamePause();
+
+
+            //Content="Name" Height="56" Name="Username1" FontSize="28" FontWeight="Bold"
+            //Username.Content = "";
+            //Username.Height = 56;
+            //Username.FontSize = 28;
+            //Username1 = Username;
+        }
+        public void Oeffnen()
+        {
+            MainWindow ofn = new MainWindow();
+            ofn.Show();
+            Username.Content = Spieler.Username;
         }
         void MainWindow_Initilized(object sender, EventArgs e)
         {

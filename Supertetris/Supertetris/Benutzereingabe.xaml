@@ -1,0 +1,15 @@
+﻿<Window x:Class="Supertetris.Benutzereingabe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Supertetris"
+        mc:Ignorable="d"
+        Title="Benutzereingabe" Height="300" Width="300" Background="LightBlue">
+    <Grid>
+        <TextBox Name="Benutzername" HorizontalAlignment="Left" Height="23" Margin="137,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White"/>
+        <Label Content="Benutzername:" HorizontalAlignment="Left" Height="23" Margin="26,128,0,0" VerticalAlignment="Top" Width="106"/>
+        <Button Content="Bestätigen" HorizontalAlignment="Left" Height="27" Margin="132,183,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
+
+    </Grid>
+</Window>

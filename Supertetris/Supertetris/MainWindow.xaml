@@ -6,8 +6,9 @@
     Initialized = "MainWindow_Initilized" Background ="LightBlue">
 
     <DockPanel LastChildFill="False">
-        <StackPanel DockPanel.Dock="Right" Width="127">
-            <Label Content="Label" Height="56" Name="Scores" FontSize="28" FontWeight="Bold" />
+        <StackPanel Name="StackLabel" DockPanel.Dock="Right" Width="127">
+            <Label Content="Name" Height="56" Name="Username" FontSize="28" FontWeight="Bold" />
+            <Label Content="0" Height="56" Name="Scores" FontSize="28" FontWeight="Bold" />
             <Label Content="Label" Height="56" Name="Lines" FontSize="28" FontWeight="Bold"/>
         </StackPanel>
         <Grid Name="MainGrid" Height="500" Width="250">

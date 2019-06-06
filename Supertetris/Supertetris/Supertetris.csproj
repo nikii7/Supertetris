@@ -54,11 +54,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Benutzereingabe.xaml.cs">
+      <DependentUpon>Benutzereingabe.xaml</DependentUpon>
+    </Compile>
     <Compile Include="gefalleneFormen.cs" />
     <Compile Include="Highscore.cs" />
     <Compile Include="Schwierigkeitsgrad.cs" />
+    <Compile Include="Spieler.cs" />
     <Compile Include="Spielfeld.cs" />
     <Compile Include="Timer.cs" />
+    <Page Include="Benutzereingabe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
