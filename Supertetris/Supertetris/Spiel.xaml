@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Spiel" Height="570" Width="525"
     KeyDown="HandleKeyDown"
-        Initialized="MainWindow_Initilized" Background="Black">
+        Initialized="MainWindow_Initilized" Background="#FF2C2C2C">
     <DockPanel LastChildFill="True">
         <StackPanel DockPanel.Dock="Right" Width="172" Background="#FFFF6255">
             <Label Content="Punkte" Height="56" x:Name="Scores" FontSize="28" FontWeight="Bold" HorizontalAlignment="Right" Width="172"/>
