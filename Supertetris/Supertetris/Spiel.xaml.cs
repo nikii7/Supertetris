@@ -22,36 +22,20 @@ namespace Supertetris
     /// </summary>
     public partial class Spiel : Window
     {
+        public Spiel()
+        {
+            InitializeComponent();
+        }
         DispatcherTimer Timer;
         Spielfeld SF;
         static public Label Username1 { get; set; }
-        public Spiel()
-        {
-
-
-            //Test
-            /*Highscore.Speichern("123", "Thomas");
-            Highscore.Speichern("100", "Niki");
-            foreach (var i in Highscore.Lesen())
-            {
-                MessageBox.Show(i);
-            }*/
-
-            
-
-
-            //Content="Name" Height="56" Name="Username1" FontSize="28" FontWeight="Bold"
-            //Username.Content = "";
-            //Username.Height = 56;
-            //Username.FontSize = 28;
-            //Username1 = Username;
-        }
         public void Oeffnen()
         {
-            Spiel spl = new Spiel();
-            spl.Show();
-            //MessageBox.Show(Spieler.Username); --> FUNKTIONIERT
-            Username.Content = Spieler.Username;
+
+            
+             //--> FUNKTIONIERT
+
+            //Username.Content = Spieler.Username;
         }
         void MainWindow_Initilized(object sender, EventArgs e)
         {
@@ -59,11 +43,12 @@ namespace Supertetris
             Timer.Tick += new EventHandler(timer);
             Timer.Interval = new TimeSpan(0, 0, 0, 0, 400);
             Gamestart();
+
         }
         private void Gamestart()
         {
-            MainGrid.Children.Clear();
-            SF = new Spielfeld(MainGrid);
+            MG.Children.Clear();
+            SF = new Spielfeld(MG);
             Timer.Start();
         }
         private void GamePause()

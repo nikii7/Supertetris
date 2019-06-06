@@ -26,6 +26,7 @@ namespace Supertetris
         {
             Benutzereingabe be = new Benutzereingabe();
             be.Show();
+            Close();
         }
     }
 }

@@ -1,52 +1,54 @@
 ﻿<Window x:Class="Supertetris.Spiel"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="MainWindow" Height="570" Width="525"
-    KeyDown = "HandleKeyDown" 
-    Initialized = "MainWindow_Initilized" Background ="LightBlue">
-
-    <DockPanel LastChildFill="False">
-        <StackPanel Name="StackLabel" DockPanel.Dock="Right" Width="127">
-            <Label Name="Username" Content="Spieler" Height="56" FontSize="28" FontWeight="Bold" />
-            <Label Content="0" Height="56" Name="Scores" FontSize="28" FontWeight="Bold" />
-            <Label Content="Label" Height="56" Name="Lines" FontSize="28" FontWeight="Bold"/>
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Supertetris"
+        mc:Ignorable="d"
+        Title="Spiel" Height="570" Width="525"
+    KeyDown="HandleKeyDown"
+        Initialized="MainWindow_Initilized" Background="LightBlue">
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Right" Width="172">
+            <Label Content="Punkte" Height="56" x:Name="Scores" FontSize="28" FontWeight="Bold"/>
+            <Label Content="Linien" Height="56" Name="Lines" FontSize="28" FontWeight="Bold"/>
         </StackPanel>
-        <Grid Name="MainGrid" Height="500" Width="250">
+        <Grid Name="MG" Height="500" Width="250">
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
         </Grid>
     </DockPanel>
