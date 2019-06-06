@@ -21,15 +21,15 @@ namespace Supertetris
         private int Cols;
         private int Score;
         private int LinesFilled;
-        private Figuren currTetramino;
-        private Label[,] Blockcontrols;
+        private Figuren currTetramino;//Stein der gerade runterfällt
+        private Label[,] Blockcontrols;//2D Array
         static private Brush NoBrush = Brushes.Transparent; // Static wenn multiplayer
-        static private Brush SilverBrush = Brushes.Gray;
+        static private Brush SilverBrush = Brushes.Gray;//Sind fix
 
-        public Spielfeld(Grid TetrisGrid)// Jede Zeile des Grids ein eigenes Label. Jedem Label einen Grauen Border(Raster). 
+        public Spielfeld(Grid Spielifeldi)// Jede Zeile des Grids ein eigenes Label. Jedem Label einen Grauen Border(Raster). Konstruktor 
         {
-            Rows = TetrisGrid.RowDefinitions.Count;
-            Cols = TetrisGrid.ColumnDefinitions.Count;
+            Rows = Spielifeldi.RowDefinitions.Count;//Schauen wie gros das grid ist
+            Cols = Spielifeldi.ColumnDefinitions.Count;//Schauen wie gros das grid ist
             Score = 0;
             LinesFilled = 0;
 
@@ -38,16 +38,16 @@ namespace Supertetris
             {
                 for (int j = 0; j < Rows; j++)
                 {
-                    Blockcontrols[i, j] = new Label();
+                    Blockcontrols[i, j] = new Label();//Initialisieren in jedem block ein label
                     Blockcontrols[i, j].Background = NoBrush;
                     Blockcontrols[i, j].BorderBrush = SilverBrush;
                     Blockcontrols[i, j].BorderThickness = new Thickness(1, 1, 1, 1);
-                    Grid.SetRow(Blockcontrols[i, j], i);//Hier setzt man Referenzen von Labels in Zellen von Grid
-                    Grid.SetColumn(Blockcontrols[i, j], j);//Hier setzen wir Referenzen von Labels in Zellen von Grid
-                    TetrisGrid.Children.Add(Blockcontrols[i, j]);
+                    Grid.SetRow(Blockcontrols[i, j], j);//Hier setzt man Referenzen von Labels in Zellen von Grid
+                    Grid.SetColumn(Blockcontrols[i, j], i);//Hier setzen wir Referenzen von Labels in Zellen von Grid
+                    Spielifeldi.Children.Add(Blockcontrols[i, j]);
                 }
             }
-            currTetramino = new Figuren();
+            currTetramino = new Figuren();//Spielstein machen
             currFigurDraw();
         }
         public int getScore()
@@ -93,7 +93,7 @@ namespace Supertetris
             bool full;
             for (int i = Rows - 1; i > 0; i--)// Läuft grid von unten nach oben durch
             {
-                full = true;
+                full = true;//Gehen aus das jede Zeile voll ist
                 for (int j = 0; j < Cols; j++) //geht reihe von links nach rechts durch
                 {
                     if (Blockcontrols[j, i].Background == NoBrush)//schaut ob reihe voll ist
@@ -110,11 +110,11 @@ namespace Supertetris
             }
 
         }
-        private void RemoveRow(int row)
+        private void RemoveRow(int row)//Übergibt aktuelle Zeile
         {
             for (int i = row; i > 2; i--)// 2 Da die oberen 2 zeilen(22) nicht ausgefüllt sind
             {
-                for (int j = 0; j < Cols; j++)
+                for (int j = 0; j < Cols; j++)// geht von l nach r
                 {
                     //Alle Zeilen gehen eins runter mit [j, i-1]
                     Blockcontrols[j, i].Background = Blockcontrols[j, i - 1].Background;
@@ -142,7 +142,7 @@ namespace Supertetris
             }
             if (move)
             {
-                currTetramino.movLeft();
+                currTetramino.movLeft();//Aktuelles Objekt nach links
                 currFigurDraw();
 
             }

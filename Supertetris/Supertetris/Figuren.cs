@@ -21,7 +21,7 @@ namespace Supertetris
         private Point[] currShape;
         private Brush currcolor;
         private bool rotate;
-        public Figuren()
+        public Figuren()//Konstruktor
         {
             currPosition = new Point(0, 0);
             currcolor = Brushes.Transparent;
@@ -58,7 +58,7 @@ namespace Supertetris
         }
         public void movRotate()
         {
-            if (rotate)
+            if (rotate)//Drehung 90 Grad
             {
                 for (int i = 0; i < currShape.Length; i++)
                 {
@@ -72,8 +72,8 @@ namespace Supertetris
         //Create Shape
         private Point[] setRandomShape()
         {
-            Random rand = new Random();
-            switch (rand.Next() % 7)
+            Random r = new Random();
+            switch (r.Next() % 7)
             {
                 case 0: //I
                     rotate = true;
@@ -126,8 +126,8 @@ namespace Supertetris
                     return new Point[] {
                         new Point(0,0),
                         new Point(-1,0),
-                        new Point(1,0),
-                        new Point(1,-1)
+                        new Point(0,-1),
+                        new Point(1,1)
                     };
                 case 6: //Z
                     rotate = true;
